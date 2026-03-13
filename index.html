@@ -33,13 +33,52 @@
   <link rel="stylesheet" href="assets/css/plugins/select2.min.css">
   <link rel="stylesheet" href="assets/css/plugins/animate.css">
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Structured Data: JSON-LD for Person and Website -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Muhammad Zaid",
+    "url": "https://www.muhammad-zahid.cv/",
+    "image": "https://www.muhammad-zahid.cv/assets/img/profile-img.png",
+    "sameAs": [
+      "https://www.linkedin.com/in/muhammad-zaid/",
+      "https://github.com/zaidsoft",
+      "https://twitter.com/zaidsoft"
+    ],
+    "jobTitle": "Full Stack Developer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Freelance"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "SA"
+    },
+    "description": "Results-driven Full Stack Developer experienced in Ruby on Rails, ReactJS, AI, Web3, and modern development practices. Based in Saudi Arabia."
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://www.muhammad-zahid.cv/",
+    "name": "Muhammad Zaid Portfolio",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.muhammad-zahid.cv/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
 </head>
 
 <body>
   <!-- <div class="cs_preloader cs_center">
     <div class="cs_preloader_in"></div>
   </div> -->
-  <div class="cs_preloader cs_center">
+  <div class="cs_preloader cs_center" role="status" aria-label="Loading">
     <div class="cs_preloader_in">
       <span class="code_symbol">&lt;/&gt;</span>
     </div>
@@ -47,16 +86,16 @@
   
   <!-- Start Header Section -->
   <header class="cs_site_header cs_style_1 cs_sticky_header cs_color_2">
-    <div class="cs_main_header">
+    <nav class="cs_main_header" aria-label="Main Navigation">
       <div class="container">
         <div class="cs_main_header_in">
           <div class="cs_main_header_left">
             <a class="cs_site_branding" href="index.html">
-              <img src="assets/img/logo.png" class="w-12" style="width: 85px; height: 80px;" alt="Logo">
+              <img src="assets/img/logo.png" class="w-12" style="width: 85px; height: 80px;" alt="Muhammad Zaid Portfolio Logo" loading="lazy">
             </a>
           </div>
           <div class="cs_main_header_center">
-            <div class="cs_nav">
+            <nav class="cs_nav" aria-label="Primary">
               <ul class="cs_nav_list">
                 <li class="active menu-item-has-children"><a href="#home" data-i18n="home">Home</a></li>
                 <li class="menu-item-has-children"><a href="#about">About</a></li>
@@ -64,16 +103,15 @@
                 <li class="menu-item-has-children"><a href="#portfolio">Portfolio</a></li>
                 <li> <a href="#contact">Contact</a></li>
               </ul>
-            </div>
+            </nav>
           </div>
           <div class="cs_main_header_right">
             <a href="#contact" class="cs_btn cs_style_1 cs_primary_font"><span>Hire Me</span></a>
             <button id="lang-switch" class="cs_btn cs_style_1 cs_primary_font" style="margin-left: 10px; min-width: 90px;">العربية</button>
-
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   </header>
   <!-- End Header Section -->
 
@@ -186,7 +224,7 @@
           <div class="col-lg-6">
             <div class="cs_hero_image_box cs_filled_bg"
             data-src="assets/img/bg/hero_bg_3.svg">
-            <div class="cs_imagebox_img w-100"><img src="assets/img/profile-img.png" style="border-radius: 20px;" alt="heroImg"></div>
+            <div class="cs_imagebox_img w-100"><img src="assets/img/profile-img.png" style="border-radius: 20px;" alt="Muhammad Zaid profile photo" loading="lazy"></div>
               <div
                 class="cs_happy_client position-absolute cs_white_bg d-flex align-items-center cs_radius_20 cs_gap_15">
                 <div class="cs_font_36 cs_semi_bold cs_accent_color_2"><span class="odometer"
@@ -206,7 +244,7 @@
     <!-- Start About Section -->
     <section id="about" class="position-relative">
       <div class="position-absolute cs_about_shape_3">
-        <img src="assets/img/about_shape_2.svg" alt="">
+        <img src="assets/img/about_shape_2.svg" alt="Decorative about section shape" loading="lazy">
       </div>
       <div class="cs_height_150 cs_height_lg_80"></div>
       <div class="container">
@@ -252,9 +290,9 @@
                       fill="#342EAD" />
                   </svg>
                 </p>
-                <h1 class="cs_hero_title cs_font_92 cs_black wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"><span class="cs_gradient_text">About </span><span
+                <h2 class="cs_hero_title cs_font_92 cs_black wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"><span class="cs_gradient_text">About </span><span
                     class="cs_gradient_border_text">Me</span>
-                </h1>
+                </h2>
               </div>
               <p class="cs_about_text">
                 Detail-oriented and motivated Full Stack Developer with strong experience in Ruby on Rails and React.js, along with a solid foundation in software testing and research. 
@@ -283,7 +321,7 @@
               <div class="cs_iconbox cs_style_2 cs_radius_20 cs_transition_4">
                 <div class="cs_iconbox_in">
                   <div class="cs_iconbox_icon cs_center">
-                    <img src="assets/img/icon/about_icon_2.svg" alt="Icon">
+                    <img src="assets/img/icon/about_icon_2.svg" alt="Full Stack Icon" loading="lazy">
                   </div>
                   <div class="cs_iconbox_info position-relative w-100">
                     <h3 class="cs_iconbox_title cs_font_28 cs_medium m-0">Full Stack</h3>
@@ -312,7 +350,7 @@
               <div class="cs_iconbox cs_style_2 cs_radius_20 cs_transition_4">
                 <div class="cs_iconbox_in">
                   <div class="cs_iconbox_icon cs_center">
-                    <img src="assets/img/icon/about_icon_1.svg" alt="Icon">
+                    <img src="assets/img/icon/about_icon_1.svg" alt="Frontend Icon" loading="lazy">
                   </div>
                   <div class="cs_iconbox_info position-relative w-100">
                     <h3 class="cs_iconbox_title cs_font_28 cs_medium m-0">Front-end</h3>
@@ -341,7 +379,7 @@
               <div class="cs_iconbox cs_style_2 cs_radius_20 cs_transition_4">
                 <div class="cs_iconbox_in">
                   <div class="cs_iconbox_icon cs_center">
-                    <img src="assets/img/icon/about_icon_3.svg" alt="Icon">
+                    <img src="assets/img/icon/about_icon_3.svg" alt="Web Architecture Icon" loading="lazy">
                   </div>
                   <div class="cs_iconbox_info position-relative w-100">
                     <h3 class="cs_iconbox_title cs_font_28 cs_medium m-0">Web architecture</h3>
@@ -378,7 +416,7 @@
     <!-- Start Slill and Education Section -->
     <section id="resume" class="cs_100_bg position-relative" data-src="assets/img/bg/ed_and_skill_bg.png">
       <div class="cs_slill_shape_1 position-absolute">
-        <img src="assets/img/skills_shape_1.svg" alt="skill and education ">
+        <img src="assets/img/skills_shape_1.svg" alt="Skills and education section shape" loading="lazy">
       </div>
       
       <div class="container pt-5">
@@ -744,7 +782,7 @@
             <div class="cs_blog_in">
               <div class="cs_blog_thumbnail cs_zoom">
                 <a href="https://www.chorehustler.com" target="_blank">
-                  <img class="cs_zoom_in w-100 h-100" src="assets/img/projects/ch-logo.png" alt="blog_img" style="object-fit: cover;">
+                  <img class="cs_zoom_in w-100 h-100" src="assets/img/projects/ch-logo.png" alt="ChoreHustler project logo" style="object-fit: cover;" loading="lazy">
                 </a>
               </div>
               <div class="cs_blog_info">
@@ -788,7 +826,7 @@
                   <!-- keep your cs_style_2 blocks EXACTLY -->
                   <div class="cs_blog cs_style_2 cs_transition_4">
                     <a href="https://www.risktrack.co" target="_blank" class="cs_blog_thumbnail cs_zoom">
-                      <img class="cs_zoom_in w-100 h-100" src="assets/img/projects/rt-logo.png" alt="">
+                      <img class="cs_zoom_in w-100 h-100" src="assets/img/projects/rt-logo.png" alt="RiskTrack project logo" loading="lazy">
                     </a>
                     <div class="cs_blog_info">
                       <h2 class="cs_blog_title cs_font_20 cs_semi_bold">
@@ -818,7 +856,7 @@
 
                   <div class="cs_blog cs_style_2 cs_transition_4">
                     <a href="https://shiftstrack.com" class="cs_blog_thumbnail cs_zoom">
-                      <img class="cs_zoom_in w-100 h-100" src="assets/img/projects/st-logo.png" alt="">
+                      <img class="cs_zoom_in w-100 h-100" src="assets/img/projects/st-logo.png" alt="ShiftTrack project logo" loading="lazy">
                     </a>
                     <div class="cs_blog_info">
                       <h2 class="cs_blog_title cs_font_20 cs_semi_bold mb-0">
@@ -844,7 +882,7 @@
 
                   <div class="cs_blog cs_style_2 cs_transition_4">
                     <a href="https://easybids.com" class="cs_blog_thumbnail cs_zoom">
-                      <img class="cs_zoom_in w-100 h-100" src="assets/img/projects/eb-logo.png" alt="">
+                      <img class="cs_zoom_in w-100 h-100" src="assets/img/projects/eb-logo.png" alt="EasyBids project logo" loading="lazy">
                     </a>
                     <div class="cs_blog_info">
                       <h2 class="cs_blog_title cs_font_20 cs_semi_bold">
@@ -875,7 +913,7 @@
                   <!-- Example using your existing blocks: -->
                   <div class="cs_blog cs_style_2 cs_transition_4">
                     <a href="https://www.protectedshops.de" target="_blank" class="cs_blog_thumbnail cs_zoom">
-                      <img class="cs_zoom_in w-100 h-100" src="assets/img/projects/ps-logo.png" alt="">
+                      <img class="cs_zoom_in w-100 h-100" src="assets/img/projects/ps-logo.png" alt="Protected Shops project logo" loading="lazy">
                     </a>
                     <div class="cs_blog_info">
                       <h2 class="cs_blog_title cs_font_20 cs_semi_bold">
@@ -901,7 +939,7 @@
 
                   <div class="cs_blog cs_style_2 cs_transition_4">
                     <a href="https://www.auxl.co.uk" class="cs_blog_thumbnail cs_zoom">
-                      <img class="cs_zoom_in w-100 h-100" src="assets/img/projects/aux-logo.png" alt="">
+                      <img class="cs_zoom_in w-100 h-100" src="assets/img/projects/aux-logo.png" alt="Auxl project logo" loading="lazy">
                     </a>
                     <div class="cs_blog_info">
                       <h2 class="cs_blog_title cs_font_20 cs_semi_bold">
@@ -958,7 +996,7 @@
                   <!-- Example using your existing blocks: -->
                   <div class="cs_blog cs_style_2 cs_transition_4">
                     <a href="https://west-way-real-estate.onrender.com/" target="_blank" class="cs_blog_thumbnail cs_zoom">
-                      <img class="cs_zoom_in w-100 h-100" src="assets/img/projects/ww-logo.png" alt="">
+                      <img class="cs_zoom_in w-100 h-100" src="assets/img/projects/ww-logo.png" alt="West Way RealEstate project logo" loading="lazy">
                     </a>
                     <div class="cs_blog_info">
                       <h2 class="cs_blog_title cs_font_20 cs_semi_bold">
@@ -984,7 +1022,7 @@
 
                   <div class="cs_blog cs_style_2 cs_transition_4">
                     <a href="https://abubakertravelandtourism.com" class="cs_blog_thumbnail cs_zoom">
-                      <img class="cs_zoom_in w-100 h-100" src="assets/img/projects/at-logo.png" alt="">
+                      <img class="cs_zoom_in w-100 h-100" src="assets/img/projects/at-logo.png" alt="Abubaker Travel and Tourism project logo" loading="lazy">
                     </a>
                     <div class="cs_blog_info">
                       <h2 class="cs_blog_title cs_font_20 cs_semi_bold">
@@ -1010,7 +1048,7 @@
 
                   <div class="cs_blog cs_style_2 cs_transition_4">
                     <a href="https://scarletconstruction.ca/" class="cs_blog_thumbnail cs_zoom">
-                      <img class="cs_zoom_in w-100 h-100 bg-black" style="object-fit: contain !important;" src="assets/img/projects/sl-logo.png" alt="">
+                      <img class="cs_zoom_in w-100 h-100 bg-black" style="object-fit: contain !important;" src="assets/img/projects/sl-logo.png" alt="Scarlet Roofing & Gutters project logo" loading="lazy">
                     </a>
                     <div class="cs_blog_info">
                       <h2 class="cs_blog_title cs_font_20 cs_semi_bold">
@@ -1221,9 +1259,9 @@
   <!-- Main content inside end-->
 
   <!-- Start Footer -->
-  <footer class="cs_footer cs_style_1 cs_filled_bg position-relative pt-5" data-src="assets/img/bg/footer_bg.svg">
+  <footer class="cs_footer cs_style_1 cs_filled_bg position-relative pt-5" data-src="assets/img/bg/footer_bg.svg" role="contentinfo">
     <div class="position-absolute cs_footer_shape_1">
-      <img src="assets/img/footer_shape.svg" alt="">
+      <img src="assets/img/footer_shape.svg" alt="" loading="lazy">
     </div>
     <div class="container">
       <div class="row cs_footer_top align-items-start">

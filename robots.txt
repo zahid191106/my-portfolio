@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /?s=
+Disallow: /index.html
 Sitemap: https://www.muhammad-zahid.cv/sitemap.xml

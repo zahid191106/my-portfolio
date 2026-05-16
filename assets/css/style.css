@@ -3873,7 +3873,7 @@ hr {
           animation: slide_top_to_bottom 5s linear infinite;
 }
 
-.cs_slill_shape_1 {
+.cs_skill_shape_1 {
   right: 100px;
   top: 100px;
   -webkit-animation: slide_top_to_bottom 5s linear infinite;
@@ -3976,7 +3976,7 @@ hr {
   .cs_about_shape_2,
   .cs_service_shape_1,
   .cs_testmonial_shape_1,
-  .cs_slill_shape_1,
+  .cs_skill_shape_1,
   .cs_not_found_shape_1 {
     display: none;
   }

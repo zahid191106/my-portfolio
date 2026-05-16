@@ -74,7 +74,7 @@ const translationsExact = {
   // SERVICES / SKILLS / RESUME
   // ----------------------------
   "Skills": "المهارات",
-  "Slills": "المهارات", // (typo exists in HTML)
+  "Skills": "المهارات", // (typo exists in HTML)
   "Proficient in": "متقن",
   "modern web": "الويب الحديثة",
   "technologies and": "التقنيات و",
